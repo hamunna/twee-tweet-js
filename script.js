@@ -45,9 +45,9 @@ const displayTweet = (tweet) => {
 	const tweetDisplayUL = document.getElementById('tweet-display-ul');
 
 	const li = document.createElement('li');
-	li.classList.add('h-12', 'w-full', 'border-2', 'border-indigo-800', 'p-2', 'rounded-md', 'flex', 'justify-between', 'my-2', 'hover:bg-indigo-100');
+	li.classList.add('h-11', 'w-full', 'border-2', 'border-indigo-800', 'p-2', 'rounded-md', 'flex', 'justify-between', 'my-2', 'hover:bg-indigo-100', 'hover-overflow');
 	li.innerHTML = `	
-		<div id="tweet-content-display">
+		<div id="tweet-content-display" class="w-10/12 overflow-auto">
 			<spna id="tweet-no">101</spna>. 
 			<strong id="tweet-text">${tweet}</strong>
 		</div>
