@@ -28,6 +28,16 @@ textInputBox.addEventListener('keyup', () => {
 });
 
 /* =====================
+ Clear Input Function
+====================== */
+
+const clearInput = () => {
+	const charRemain = document.getElementById('char-remain');
+	textInputBox.value = '';
+	charRemain.innerText = 255;
+}
+
+/* =====================
  Submit Button
 ====================== */
 
@@ -53,7 +63,6 @@ const displayTweet = (tweet) => {
 document.getElementById('submit-btn').addEventListener('click', () => {
 
 	const textInputVal = textInputBox.value;
-	const charRemain = document.getElementById('char-remain');
 
 	if (textInputVal < 1) {
 		alert('Please Write Something!');
@@ -62,8 +71,14 @@ document.getElementById('submit-btn').addEventListener('click', () => {
 		displayTweet(textInputVal);
 	}
 
-	textInputBox.value = '';
-	charRemain.innerText = 255;
+	clearInput();
 });
 
 
+/* =====================
+ Clear Button
+====================== */
+
+document.getElementById('clear-btn').addEventListener('click', () => {
+	clearInput();
+});
