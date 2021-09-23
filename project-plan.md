@@ -1,6 +1,6 @@
-================
-Trigger Points
-================
+=======================================
+* Planning Through the Trigger Points
+=======================================
 
 1) Tweet Input Field :: Event: "keyup"
 --------------------------------------
@@ -11,13 +11,14 @@ Trigger Points
 
 2) Submit btn :: Event: "click"
 --------------------------------
-	(1) Clicking the "Submit" btn, the text will be added to the "TWEETS" Section.
+	(1) Clicking the "Submit" btn, the text will be added to the "TWEETS" Section and the Input field will be cleared.
+	(2) The tweet will also be added to the "Local Storage"
 
 ======================================
 
 3) Clear btn :: Event: "click"
 -------------------------------
-	(1) Clicking the "Clear" btn, Everything will be back into the initial state.
+	(1) Clicking the "Clear" btn, the Input field will be cleared.
 
 ======================================
 
@@ -27,6 +28,14 @@ Trigger Points
 
 ======================================
 
-5) Tweet Edit btn ::
+5) Tweet Edit btn :: Event: "click"
+-------------------------------------
+	(1) Clicking the Edit icon, its tweet will be shown in the input field.
+	(2) Clicking "Submit" btn after Editing, The Display tweet and the Local Storage Tweet will be replaced
 
-6) Tweet Delete btn ::
+======================================
+
+6) Tweet Delete btn :: Event: "click"
+--------------------------------------
+	(1) Clicking the Delete icon, there will be an Alert of Confirmation appeared.
+	(2) If "Yes" the tweet will be removed.
