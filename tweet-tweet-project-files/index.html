@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tweet Tweet JS Custom Projetc</title>
+
+		<!-- Tailwind CSS CDN File -->
+		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<div class="container w-3/4 mx-auto">
+			<h1 class="text-indigo-800 font-black text-6xl text-center border-b-2 pb-8 mb-8 mt-4 border-indigo-800">
+				Tweet Tweet
+			</h1>
+
+			<div class="lg:flex">
+
+				<!-- Left Side -->
+				<div class="md:h-40 lg:h-60 bg-gray-100 rounded-2xl p-4 md:w-full lg:w-3/5 mr-4 border border-indigo-300 sm:mb-8">
+					<textarea id="text-input-box" class="resize-none rounded-xl w-full h-3/4 p-4 outline-none block mx-auto border-2 border-indigo-800"
+						placeholder="No more than 255 character..."></textarea>
+
+					<div class="mt-4 ml-4 flex flex-row justify-center" id="btns">
+						<button id="submit-btn" class="h-8 w-20 rounded-lg mx-4 bg-indigo-800 text-white font-bold">Submit</button>
+						<button id="clear-btn" class="h-8 w-20 rounded-lg mx-4 bg-indigo-800 text-white font-bold">Clear</button>
+					</div>
+
+				</div>
+
+				<!-- Right Side -->
+				<div class="h-auto w-full my-8 lg:my-0">
+					<input id="search-box" type="search" class="h-10 w-full border border-indigo-500 rounded-md outline-none mb-4 pl-2" placeholder="Search here...">
+
+					<div class="bg-gray-100 rounded-2xl p-4 border border-indigo-300 h-80 overflow-auto">
+						<ul id="tweet-display-ul">
+						
+							
+							<!-- <li id="tweet-1" class="h-12 w-full border border-indigo-800 p-2 rounded-md flex justify-between my-2 hover:bg-indigo-200">
+								<div id="tweet-content-display">
+									<spna id="tweet-no">1</spna>. 
+									<strong id="tweet-text">This is a Demo tweet...</strong>
+								</div>
+								<div id="tweet-controls">
+									<i id="edit-btn" class="fas fa-edit text-indigo-800 mx-2 cursor-pointer text-lg"></i>
+									<i id="delete-btn" class="fas fa-trash-alt text-red-600 mx-2 cursor-pointer text-lg"></i>
+								</div>
+							</li> -->
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Font Awesome CDN -->
+		<script src="https://kit.fontawesome.com/6a7a03e364.js" crossorigin="anonymous"></script>
+
+		<!-- Mian JS File -->
+		<script src="script.js"></script>
+	</body>
+
+</html>
