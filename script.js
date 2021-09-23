@@ -82,3 +82,44 @@ document.getElementById('submit-btn').addEventListener('click', () => {
 document.getElementById('clear-btn').addEventListener('click', () => {
 	clearInput();
 });
+
+
+/* =====================
+ Search Box
+====================== */
+
+const searchBox = document.getElementById('search-box');
+searchBox.addEventListener('keyup', () => {
+	// console.log(searchBox.value);
+	const filting = [
+		'bangladesh',
+		'india',
+		'pakistan',
+		'uganda',
+		'z'
+	];
+
+	for (const fil of filting) {
+
+		const a = fil.indexOf(searchBox.value);
+		if (a !== -1) {
+			console.log(fil);
+
+		}
+	}
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
